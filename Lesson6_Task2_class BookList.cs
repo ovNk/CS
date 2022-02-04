@@ -202,6 +202,7 @@ namespace Lesson6_Task2
             }
         }
         
+        //вложенный класс Книга
         public class Book
         {
             //СВОЙСТВА
