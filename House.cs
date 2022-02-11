@@ -17,6 +17,7 @@ namespace Lesson8_Task1
         {
             get
             {
+                //выход за границы массива
                 if (index < 0 || index >= parts.Length)
                     throw new IndexOutOfRangeException($"The index is out of range!" +
                         $" Available indexes 0 - 10, an attempt to access index {index} was recorded!");
@@ -25,6 +26,7 @@ namespace Lesson8_Task1
             
             set
             {
+                //выход за границы массива
                 if (index < 0 || index >= parts.Length)
                     throw new IndexOutOfRangeException($"The index is out of range!" +
                         $" Available indexes 0 - 10, an attempt to access index {index} was recorded!");
@@ -32,6 +34,7 @@ namespace Lesson8_Task1
             }
         }
 
+        //переопределение ToString() для вывода построенного дома в консоль
         public override string ToString()
         {
             string result = "Full building:\n";
