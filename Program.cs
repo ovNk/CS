@@ -34,24 +34,9 @@ namespace Lesson9_Task1
     {
         static void Main(string[] args)
         {
-            //Random rand = new Random();
-            //IWorker current;
             IPart[] new_house = new IPart[HouseProject.Project.Length];//массив для нового дома
             Team.Building(new_house);//строим
-            //for (int i = 0; i < new_house.Length; ++i)
-            //{
-            //    current = Team.team[rand.Next(0, Team.team.Length)];
-                
-            //    while (current is TeamLeader) 
-            //    {
-            //        current.Build(new_house, i);
-            //        current = Team.team[rand.Next(0, Team.team.Length)];
-            //    }
-
-            //    current.Build(new_house, i);
-            //}
-
-            //Team.team[0].Build(new_house, new_house.Length);
+            return;
         }
     }
 }
