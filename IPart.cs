@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson9_Task1
 {
+    //Интерфейс для "частей" дома
     interface IPart
     {
         //СВОЙСТВА
