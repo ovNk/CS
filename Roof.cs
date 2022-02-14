@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Lesson8_Task1
 {
+    //Крыша
     class Roof : IPart
     {
         //СВОЙСТВА
