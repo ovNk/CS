@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Lesson8_Task1
 {
+    //Окно
     class Window : IPart
     {
         //СВОЙСТВА
