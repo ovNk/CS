@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Lesson8_Task1
 {
+    //Рабочий
     class Worker : IWorker
     {
         public void Build(House house, int index)
