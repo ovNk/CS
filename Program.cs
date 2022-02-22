@@ -35,8 +35,10 @@ namespace Lesson12
              * Цикл прерывается, когда пользователь выбирает специальный пункт меню «Конец».
              * Распечатайте накопившиеся фигуры.*/
 
+            //пустой динамический массив фигур
             List<IFigure> shapes = new List<IFigure>();
          
+            //массив фигур для выбора в меню по индексу
             IFigure[] shape_arr = new IFigure[3]
             {
                 new Square(),
@@ -44,14 +46,20 @@ namespace Lesson12
                 new Sphere()
             };
 
+            //показываем меню и чистаем первый ответ
             Console.WriteLine("0.Exit\n1.Square\n2.Triangle\n3.Sphere");
             int answer = Int32.Parse(Console.ReadLine());
 
+            //пока не выбран выход
             while (answer != 0)
             {
+                //добавляем в массив соответствующую фигуру по индексу
                 shapes.Add(shape_arr[answer - 1]);
+                //следующий ответ
                 answer = Int32.Parse(Console.ReadLine());
             }
+            
+            //Печать фигур в массиве
             Console.WriteLine("Shapes:");
             foreach (IFigure el in shapes)
             {
