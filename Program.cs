@@ -36,11 +36,12 @@ namespace Lesson12
              * Распечатайте накопившиеся фигуры.*/
 
             List<IFigure> shapes = new List<IFigure>();
-            Dictionary<int, IFigure> shapeDict = new Dictionary<int, IFigure>()
+         
+            IFigure[] shape_arr = new IFigure[3]
             {
-                { 1, new Square() },
-                { 2, new Triangle() },
-                { 3, new Sphere() }
+                new Square(),
+                new Triangle(),
+                new Sphere()
             };
 
             Console.WriteLine("0.Exit\n1.Square\n2.Triangle\n3.Sphere");
@@ -48,7 +49,7 @@ namespace Lesson12
 
             while (answer != 0)
             {
-                shapes.Add(shapeDict[answer]);
+                shapes.Add(shape_arr[answer - 1]);
                 answer = Int32.Parse(Console.ReadLine());
             }
             Console.WriteLine("Shapes:");
